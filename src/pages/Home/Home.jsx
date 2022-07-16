@@ -8,7 +8,7 @@ export const Home = () => {
     <>
       <TopContainer />
       <CenterContainer />
-      <BottomContainer/>
+      <BottomContainer />
     </>
   );
 };

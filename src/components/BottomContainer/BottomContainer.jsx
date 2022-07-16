@@ -29,7 +29,11 @@ export const BottomContainer = () => {
 
   return (
     <div className="bottom-container">
-      <div className="quote"onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
+      <div
+        className="quote"
+        onMouseOver={handleMouseOver}
+        onMouseOut={handleMouseOut}
+      >
         <h4 className="quote-text">“{quote.q}”</h4>
         <p className="quote-author"> ~ {quote.a}</p>
       </div>
