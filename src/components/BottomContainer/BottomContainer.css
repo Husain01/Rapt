@@ -1,0 +1,39 @@
+.bottom-container {
+  display: flex;
+  position: absolute;
+  bottom: 1rem;
+  width: 100%;
+  justify-content: center;
+}
+
+.quote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  
+  height: 3rem;
+}
+
+.quote-author {
+  z-index: 1;
+  transition: all 500ms ease-in;
+  position: absolute;
+  opacity: 0;
+}
+
+.quote-text {
+  z-index: 2;
+  height: 2rem;
+  transition: all 500ms ease-in;
+}
+
+.quote-text:hover {
+  position: relative;
+  transform: translateY(-.7rem);
+}
+
+.quote-text:hover + .quote-author {
+  transform: translateY(.7rem);
+  opacity: 1;
+}

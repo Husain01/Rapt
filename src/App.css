@@ -1,0 +1,28 @@
+.App{
+/* z-index: -1; */
+height: 100vh;
+background-repeat: no-repeat;
+
+background: radial-gradient(
+  rgba(0, 0, 0, 0.1),
+  rgba(0, 0, 0, 0.5))
+;
+position: relative;
+}
+
+.bg-img{
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.img{
+  height: inherit;
+  width: inherit;
+  position: absolute;
+  z-index: inherit;
+}
+
+h1{
+  color: white;
+}

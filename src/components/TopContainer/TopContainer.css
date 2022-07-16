@@ -1,0 +1,12 @@
+.top-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.greeting{
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: white;
+}
