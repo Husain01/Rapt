@@ -1,5 +1,5 @@
 import React from "react";
-import './TopContainer.css';
+import "./TopContainer.css";
 
 const TopContainer = () => {
   let greet;
@@ -7,19 +7,19 @@ const TopContainer = () => {
   const time = new Date();
   const hour = time.getHours();
   if (hour < 5 || hour >= 22) {
-    greet = 'Good Night'
+    greet = "Good Night";
   } else if (hour < 12) {
-    greet = 'Good Morning'
-  } else if (hour < 17 ) {
-    greet = 'Good Afternoon'
+    greet = "Good Morning";
+  } else if (hour < 17) {
+    greet = "Good Afternoon";
   } else if (hour < 22) {
-    greet = 'Good Evening'
+    greet = "Good Evening";
   }
   return (
     <div className="top-container">
       <div className="greeting">
         <h3>
-        {greet}, {user}
+          {greet}, {user}
         </h3>
       </div>
       <div className="weather"></div>
