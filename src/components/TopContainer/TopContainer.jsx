@@ -1,4 +1,5 @@
 import React from "react";
+import { Weather } from "../Weather/Weather";
 import "./TopContainer.css";
 
 const TopContainer = () => {
@@ -22,7 +23,7 @@ const TopContainer = () => {
           {greet}, {user}
         </h3>
       </div>
-      <div className="weather"></div>
+      <div className="weather"><Weather/></div>
     </div>
   );
 };

@@ -17,7 +17,6 @@ export const BottomContainer = () => {
   const getQuote = async () => {
     try {
       const { data } = await axios.get("https://zenquotes.io/api/random");
-      console.log(data[0]);
       setQuote(data[0]);
     } catch (error) {
       console.log(error);
