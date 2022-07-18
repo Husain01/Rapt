@@ -79,7 +79,24 @@
   height: 1.5rem;
 }
 
+input[type=checkbox]{
+  opacity: 0;
+}
+input[type=checkbox]:hover{
+  opacity: 1;
+}
 
+.focus-field:hover > .icon-container > * {
+  opacity: 1;
+}
+
+.focus-field:hover > input[type=checkbox]{
+  opacity: 1;
+}
+
+.icon-container:hover > *{
+  opacity: 1;
+}
 
 .focus input:focus {
   outline: none;
@@ -90,5 +107,6 @@
 }
 
 .icon {
+  opacity: 0;
   cursor: pointer;
 }

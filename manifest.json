@@ -1,0 +1,22 @@
+{
+    "name": "Rapt",
+    "version": "1.0",
+    "author": "Husain",
+    "description": "A New Tab Experience",
+    "icons": {
+        "16":"favicon.ico",
+        "48":"favicon48.png"
+    },
+    "chrome_url_overrides": {
+        "newtab": "index.html"
+    },
+    "permissions": [
+        "http://fonts.googleapis.com/",
+        "https://fonts.googleapis.com/"
+    ],    
+    "web_accessible_resources": [
+        "src/index.css",
+        "fonts/Raleway-Regular.ttf"
+        ],
+    "manifest_version": 2
+}

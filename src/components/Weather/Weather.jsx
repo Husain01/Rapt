@@ -4,10 +4,10 @@ import './Weather.css'
 
 export const Weather = () => {
   let latitude, longitude;
+  const APIKey = import.meta.env.VITE_WEATHER_KEY;
   const [position, setPosition] = useState({ latitude: 0, longitude: 0 });
   const [weatherData, setweatherData] = useState();
-  const weatherAPIUrl = `https://api.weatherapi.com/v1/current.json?key=713d7bdbc72640f0bfb164343221307&q=${position.latitude},${position.longitude}`;
-
+  const weatherAPIUrl = `https://api.weatherapi.com/v1/current.json?key=${APIKey}&q=${position.latitude},${position.longitude}`;
   const savePositionToState = (position) => {
     latitude = position.coords.latitude;
     longitude = position.coords.longitude;
@@ -31,7 +31,7 @@ export const Weather = () => {
 
   return (
     <div className="weather-container">
-      <img src={weatherData?.current.condition.icon} alt="weather-icon" />
+      <img src={"https:" + weatherData?.current.condition.icon} alt="weather-icon" />
       <div>
         <p>{weatherData?.current.temp_c} &deg;</p>
         <p>

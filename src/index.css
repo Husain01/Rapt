@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: url('chrome-extension://__MSG_@@extension_id__/fonts/Raleway-Regular.ttf'); 
+ }
+
 :root {
   font-family: 'Raleway', sans-serif;
   

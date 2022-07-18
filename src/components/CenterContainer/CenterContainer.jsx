@@ -36,6 +36,12 @@ export const CenterContainer = () => {
     setFocusText('');
   }
 
+  useEffect(() => {
+    setFocusText(localStorage.getItem("focusText"))
+  
+  }, [])
+  
+
   return (
     <div className="center-container">
       <div className="time">
@@ -48,10 +54,12 @@ export const CenterContainer = () => {
         {focus ? (
           <div className="focus-field">
             <input type="checkbox" className="focus-checkbox" onChange={() => setChecked(!checked)}/>
-            <p className={checked ? "checked" : ""}>{focus}</p>
+            <p className={"focus-text " + (checked ? "checked" : "")} >{focus}</p>
+          <div className="icon-container">
 
             <MdEdit className="icon" onClick={editHandler}/>
             <MdClear className="icon" onClick={deleteHandler}/>
+          </div>
           </div>
         ) : (
           <>
