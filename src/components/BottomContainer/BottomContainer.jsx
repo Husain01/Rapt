@@ -14,9 +14,11 @@ export const BottomContainer = () => {
     setIsHovering(false);
   };
 
+  const proxy = 'https://api.allorigins.win/raw?url='
+
   const getQuote = async () => {
     try {
-      const { data } = await axios.get("https://zenquotes.io/api/random");
+      const { data } = await axios.get(proxy + "https://zenquotes.io/api/random");
       setQuote(data[0]);
     } catch (error) {
       console.log(error);

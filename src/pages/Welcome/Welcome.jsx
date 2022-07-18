@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { MdArrowForwardIos } from "react-icons/md";
 import "./Welcome.css";
 
 export const Welcome = () => {
@@ -19,7 +20,7 @@ export const Welcome = () => {
       <button onClick={setUsernameHandler}>
         <div class="svg-wrapper-1">
           <div class="svg-wrapper">
-            <i class="fas fa-angle-double-right"></i>
+            <MdArrowForwardIos className="arrow"/>
           </div>
         </div>
         <span>Next</span>

@@ -31,7 +31,7 @@ export const Weather = () => {
 
   return (
     <div className="weather-container">
-      <img src={weatherData?.current.condition.icon} alt="weather-icon" />
+      <img src={"https:" + weatherData?.current.condition.icon} alt="weather-icon" />
       <div>
         <p>{weatherData?.current.temp_c} &deg;</p>
         <p>
